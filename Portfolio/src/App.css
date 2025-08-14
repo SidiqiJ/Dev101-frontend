@@ -1,0 +1,117 @@
+/* Portfolio custom styles inspired by fiordaliso.io dark theme */
+
+.portfolio-root {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #18181b 0%, #23232a 100%);
+  color: #eaeaea;
+  font-family: 'Inter', 'Avenir', 'Helvetica', 'Arial', sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+
+.portfolio-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 3rem 1rem 3rem;
+  background: rgba(24,24,27,0.95);
+  box-shadow: 0 2px 16px 0 #000a;
+}
+.portfolio-logo {
+  font-size: 2rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+  color: #7f5af0;
+}
+.portfolio-nav ul {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.portfolio-nav button {
+  background: none;
+  border: none;
+  color: #eaeaea;
+  font-size: 1.1rem;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: background 0.2s, color 0.2s;
+}
+.portfolio-nav button.active,
+.portfolio-nav button:hover {
+  background: #7f5af0;
+  color: #fff;
+}
+
+.portfolio-main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 1rem;
+}
+
+.home-section {
+  text-align: center;
+  max-width: 700px;
+}
+.home-section h1 {
+  font-size: 2.8rem;
+  margin-bottom: 0.5rem;
+  color: #7f5af0;
+}
+.subtitle {
+  font-size: 1.3rem;
+  margin-bottom: 2rem;
+  color: #eaeaea;
+}
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.7rem;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+.skills span {
+  background: #23232a;
+  color: #7f5af0;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-size: 1rem;
+  font-weight: 500;
+}
+.ai-callout {
+  font-size: 1.1rem;
+  color: #eaeaea;
+  background: #7f5af0;
+  padding: 1rem;
+  border-radius: 12px;
+  margin-top: 1.5rem;
+  box-shadow: 0 2px 8px #0005;
+}
+
+.about-section, .projects-section, .contact-section {
+  background: rgba(36,36,36,0.95);
+  padding: 2rem 2.5rem;
+  border-radius: 18px;
+  box-shadow: 0 2px 16px #000a;
+  max-width: 600px;
+  margin: 2rem auto;
+  text-align: left;
+}
+.about-section h2, .projects-section h2, .contact-section h2 {
+  color: #7f5af0;
+  margin-bottom: 1rem;
+}
+.about-section p, .projects-section p, .contact-section p {
+  color: #eaeaea;
+  font-size: 1.1rem;
+}
+.contact-section a {
+  color: #7f5af0;
+  text-decoration: underline;
+}
